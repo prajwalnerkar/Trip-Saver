@@ -1,4 +1,4 @@
-# 🛍️ LocalLoop — Real-Time Local Store Inventory Platform
+# 🛍️ TripSaver — Real-Time Local Store Inventory Platform
 
 > A full-stack project currently under development that helps customers check real-time product availability in nearby retail stores before visiting — reducing wasted trips while giving retailers simple, powerful inventory management tools.
 
@@ -20,12 +20,12 @@ Customers travel to nearby stores expecting to buy a product, only to find it's 
 
 ## ✅ The Solution
 
-**LocalLoop** bridges the gap between customers and local retailers through live inventory visibility.
+**TripSaver** bridges the gap between customers and local retailers through live inventory visibility.
 
 - **Shoppers** can search for products, check stock status at nearby stores, reserve items, and get restock alerts — before leaving home.
 - **Store owners** can manage their inventory through a simple dashboard, keeping stock data accurate and up to date.
 
-By making inventory visible before a visit, LocalLoop helps businesses improve customer satisfaction, reduce wasted trips, and make local advertising more effective.
+By making inventory visible before a visit, TripSaver helps businesses improve customer satisfaction, reduce wasted trips, and make local advertising more effective.
 
 ---
 
@@ -66,7 +66,7 @@ By making inventory visible before a visit, LocalLoop helps businesses improve c
 ## 📁 Project Structure
 
 ```
-localloop/
+TripSaver/
 │
 ├── frontend/         # React + TypeScript app
 ├── backend/          # Flask REST API
