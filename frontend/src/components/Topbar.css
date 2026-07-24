@@ -1,0 +1,99 @@
+.topbar {
+  background: #ffffff !important;
+  color: #212121 !important;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.topbar-toolbar {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  height: 64px;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-sizing: border-box;
+}
+
+.logo {
+  font-size: 35px !important;
+  font-weight: 700;
+  color: #1976d2;
+  cursor: pointer;
+  white-space: nowrap;
+  user-select: none;
+  flex-shrink: 0;
+  transition: color 0.2s ease;
+}
+
+.logo:hover {
+  color: #1565c0;
+}
+
+.search-field {
+  flex: 1;
+  min-width: 0;
+}
+
+.search-input {
+  background: #f5f5f5;
+  border-radius: 30px;
+}
+
+.search-icon {
+  color: #757575;
+}
+
+.notification-btn,
+.search-btn {
+  color: #424242 !important;
+  flex-shrink: 0;
+}
+
+.toolbar-spacer {
+  flex: 1;
+}
+
+@media (max-width: 900px) {
+  .logo {
+    font-size: 36px !important;
+  }
+
+  .topbar-toolbar {
+    padding: 0 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  .topbar-toolbar {
+    height: 60px;
+    padding: 0 10px;
+    gap: 6px;
+  }
+
+  .mobile-logo {
+    font-size: 22px !important;
+  }
+
+  .search-field {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .notification-btn,
+  .search-btn {
+    padding: 6px !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .mobile-logo {
+    font-size: 20px !important;
+  }
+
+  .topbar-toolbar {
+    padding: 0 8px;
+    gap: 4px;
+  }
+}

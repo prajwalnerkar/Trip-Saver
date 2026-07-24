@@ -1,0 +1,34 @@
+.bottom-navbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  background: #fff;
+
+  border-top: 1px solid #e5e5e5;
+
+  z-index: 1200;
+}
+
+.bottom-navigation {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+
+  height: 68px;
+}
+
+.bottom-navigation .MuiBottomNavigationAction-root {
+  color: #777;
+}
+
+.bottom-navigation .Mui-selected {
+  color: #1976d2;
+}
+
+@media (max-width: 768px) {
+  .bottom-navigation {
+    height: 64px;
+  }
+}
