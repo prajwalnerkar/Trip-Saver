@@ -1,127 +1,115 @@
-# Real-Time Local Store Inventory Platform
+# 🛍️ LocalLoop — Real-Time Local Store Inventory Platform
 
-A personal full-stack project currently under development that helps customers check real-time product availability in nearby retail stores before visiting. The platform aims to reduce unnecessary store visits while providing retailers with simple inventory management tools.
+> A full-stack project currently under development that helps customers check real-time product availability in nearby retail stores before visiting — reducing wasted trips while giving retailers simple, powerful inventory management tools.
 
-> **Status:** 🚧 Under Development
-
----
-
-## About the Project
-
-This project is inspired by the **"Two Problems, One Solution"** problem statement.
-
-### Problem A
-**How can small brands optimize digital ads within limited budgets?**
-
-Small businesses often spend their advertising budget inefficiently because they lack the expertise and time to continuously optimize campaigns. Advertising products that are unavailable in stores can also lead to wasted ad spend and poor customer experience.
-
-### Problem B
-**Why do shoppers visit stores only to find items unavailable?**
-
-Customers frequently travel to nearby stores expecting to buy a product, only to discover it is out of stock. Without access to real-time inventory information, these trips waste both time and effort.
+**Status:** 🚧 Under Active Development (20–25% complete)
 
 ---
 
-## Solution
+## 💡 The Problem
 
-The **Real-Time Local Store Inventory Platform** bridges the gap between customers and local retailers by providing live inventory visibility.
+This project was inspired by two real-world problems faced by small local businesses:
 
-Customers can search for products, check stock availability in nearby stores, reserve items, and receive restock notifications. Store owners can easily update inventory through a simple dashboard, ensuring inventory information remains accurate and up to date.
+### Problem A — Wasted Ad Spend
+Small brands lose advertising budget because they lack the expertise and time to continuously optimize campaigns. Promoting out-of-stock products makes this even worse — wasted clicks, frustrated customers.
 
-By making inventory visible before customers visit a store, businesses can improve customer satisfaction while reducing wasted trips and potentially improving the effectiveness of local advertising.
+### Problem B — Wasted Store Trips
+Customers travel to nearby stores expecting to buy a product, only to find it's out of stock. Without real-time inventory visibility, these trips waste time and erode trust in local retailers.
 
 ---
 
-## Features
+## ✅ The Solution
 
-### Customer
+**LocalLoop** bridges the gap between customers and local retailers through live inventory visibility.
 
-- Search for products
-- View nearby stores
-- Real-time stock status
+- **Shoppers** can search for products, check stock status at nearby stores, reserve items, and get restock alerts — before leaving home.
+- **Store owners** can manage their inventory through a simple dashboard, keeping stock data accurate and up to date.
+
+By making inventory visible before a visit, LocalLoop helps businesses improve customer satisfaction, reduce wasted trips, and make local advertising more effective.
+
+---
+
+## ✨ Features
+
+### 👤 For Shoppers
+- 🔍 Search products by name or category
+- 📍 View nearby stores carrying the item
+- 📊 Real-time stock status
   - ✅ In Stock
   - 🟡 Low Stock
   - ❌ Out of Stock
-- Reserve products
-- Receive restock notifications
+- 🔒 Reserve products before visiting
+- 🔔 Restock notifications *(planned)*
 
-### Store Owner
-
-- Inventory dashboard
-- Add, update and remove products
-- Manual inventory updates
-- Barcode scanning support *(planned)*
-- Automatic inventory deduction after sales *(planned)*
-
----
-
-## Tech Stack
-
-### Frontend
-
-- React
-- TypeScript
-- Vite
-- React Router
-- CSS
-
-### Backend
-
-- Flask
-- Python
-- REST API
-
-### Database
-
-- PostgreSQL
+### 🏪 For Store Owners
+- 📋 Inventory management dashboard
+- ➕ Add, edit, and remove products
+- 🖼️ Product image uploads via Cloudinary
+- 🔄 Manual inventory updates
+- 🚫 Out-of-stock visibility control
+- 📷 Barcode scanning support *(planned)*
+- 🔗 Auto inventory deduction via POS integration *(planned)*
 
 ---
 
-## Project Structure
+## 🛠️ Tech Stack
+
+| Layer | Technology |
+|---|---|
+| Frontend | React, TypeScript, Vite, React Router, CSS |
+| Backend | Flask, Python, REST API |
+| Database | PostgreSQL |
+| Image Storage | Cloudinary |
+
+---
+
+## 📁 Project Structure
 
 ```
-project-root/
+localloop/
 │
-├── frontend/
-├── backend/
-├── database/
+├── frontend/         # React + TypeScript app
+├── backend/          # Flask REST API
+├── database/         # PostgreSQL schema & migrations
 └── README.md
 ```
 
 ---
 
-## Current Development
+## 🚦 Development Progress
 
-### Completed
+### ✅ Completed
+- Authentication — Login & Registration (Shopper + Store Owner)
+- Store owner dashboard — Add, Edit, Delete, View products
+- Product image upload via Cloudinary
+- Out-of-stock visibility toggle
+- Home page with product listings
+- PostgreSQL database integration
+- Flask REST API structure
 
-- Project setup
-- React frontend
-- Flask backend
-- PostgreSQL integration
-- Basic API structure
-
-### In Progress
-
+### 🔄 In Progress
 - Product search
-- Store inventory management
-- Store dashboard
+- Nearby store results
 - Reservation system
 
-### Planned
-
+### 📅 Planned
 - Restock notifications
 - Barcode scanner
-- Authentication
 - Google Maps integration
-- Automatic inventory updates
+- Automatic inventory updates via POS
 - Analytics dashboard
+- Ad spend optimization (Mode 2)
 
 ---
 
-## Installation
+## ⚙️ Getting Started
+
+### Prerequisites
+- Node.js
+- Python 3.x
+- PostgreSQL
 
 ### Frontend
-
 ```bash
 cd frontend
 npm install
@@ -129,22 +117,32 @@ npm run dev
 ```
 
 ### Backend
-
 ```bash
 cd backend
-
 python -m venv venv
 
 # Windows
 venv\Scripts\activate
 
-pip install -r requirements.txt
+# macOS / Linux
+source venv/bin/activate
 
+pip install -r requirements.txt
 python app.py
 ```
 
+> ⚠️ Create a `.env` file in `/backend` with your PostgreSQL credentials and Cloudinary API keys before running. Never commit `.env` to GitHub.
+
 ---
 
-## License
+## 🙋 About This Project
+
+This is a personal side project I'm building while working as a Software Engineer Trainee. The goal is to solve two real, everyday problems for small local retailers — and to grow as a full-stack developer in the process.
+
+I'm sharing the journey publicly — follow along on [LinkedIn](#) for weekly updates.
+
+---
+
+## 📄 License
 
 This project is for learning and personal development purposes.
